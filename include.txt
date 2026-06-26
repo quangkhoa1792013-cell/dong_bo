@@ -1,0 +1,21 @@
+# =====================================================================
+#                      CẤU HÌNH ĐỒNG BỘ GITHUB (SMART)
+# =====================================================================
+# [QUY TẮC CÚ PHÁP]:
+#   .       -> Lấy toàn bộ file hiện ở gốc (bỏ qua file ẩn)
+#   .()     -> Lấy tất cả mọi thứ kể cả file ẩn ở gốc
+#   [Đường dẫn cụ thể] -> Điền đích danh file/thư mục muốn lấy riêng
+# =====================================================================
+# HÃY ĐIỀN CÁC ĐƯỜNG DẪN CỦA BẠN PHÍA DƯỚI DÒNG NÀY:
+# ---------------------------------------------------------------------
+
+~/.config/nvim
+~/.config/alacritty/
+~/.config/btop/
+~/.config/cava/
+~/.config/fastfetch/
+~/.config/hypr/
+~/.config/opencode/
+~/.config/waybar/
+~/.minecraft
+~/.local/share/Steam/steamapps/common/Geometry Dash/geode/

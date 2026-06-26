@@ -1,0 +1,121 @@
+23:31:21 INFO  [Main] [Geode]: Running Geode v5.7.1 in Geometry Dash v2.2081 on Windows
+23:31:21 INFO  [Main] [Geode]: Loader commit: 2cfd33a, Bindings commit: 64da1418
+23:31:21 INFO  [Main] [Geode]: Setting up internal mod
+23:31:21 INFO  [Main] [Geode]: Setting up loader
+23:31:21 INFO  [Main] [Geode]:   Loading launch arguments
+23:31:21 INFO  [Main] [Geode]:   Setting up crash handler
+23:31:21 INFO  [Main] [Geode]:   Loading hooks
+23:31:21 DEBUG [Main] [Geode]:     Enabled CCTextInputNode::ccTouchBegan hook at 0x140051330 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled LoadingLayer::loadAssets hook at 0x14032ed60 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCEGLView::pumpRawInput hook at 0x6ffffd648060 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCEGLView::setupWindow hook at 0x6ffffd648a60 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCApplication::updateControllerKeys hook at 0x6ffffd643eb0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled MoreOptionsLayer::onKeybindings hook at 0x1400dcf70 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled onGLFWError hook at 0x6ffffd647700 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled onGLFWError2 hook at 0x6ffffd647760 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled GameManager::reloadAllStep5 hook at 0x14018a7d0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCNode::getUserObject hook at 0x6ffffd5d3600 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCNode::setUserObject hook at 0x6ffffd5d50b0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled LevelPage::onPlay hook at 0x14031d880 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled LoadingLayer::init hook at 0x14032e4c0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled LoadingLayer::loadAssets hook at 0x14032ed60 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled MenuLayer::init hook at 0x140333a90 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled ProfilePage::getUserInfoFinished hook at 0x1403c5ee0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDirector::willSwitchToScene hook at 0x6ffffd6902a0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDirector::popScene hook at 0x6ffffd68eb70 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDirector::popToSceneStackLevel hook at 0x6ffffd68ed50 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled AppDelegate::trySaveGame hook at 0x140083500 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCScheduler::update hook at 0x6ffffd692b60 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCKeyboardDispatcher::keyToString hook at 0x6ffffd615070 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDrawNode::init hook at 0x6ffffd5e52c0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCMenuItem::activate hook at 0x6ffffd62a140 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCMenu::ccTouchEnded hook at 0x6ffffd629070 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::create hook at 0x6ffffd65b4d0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::createWithSpriteFrameName hook at 0x6ffffd65b6c0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::initWithSpriteFrame hook at 0x6ffffd65bbd0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::initWithSpriteFrameName hook at 0x6ffffd65bc40 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::initWithFile hook at 0x6ffffd65bb60 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSpriteFrameCache::spriteFrameByName hook at 0x6ffffd662820 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSpriteBatchNode::initWithTexture hook at 0x6ffffd65e650 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCFileUtils::sharedFileUtils hook at 0x6ffffd64b060 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCFileUtils::fullPathForFilename hook at 0x6ffffd63e990 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCMenu::initWithArray hook at 0x6ffffd629460 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCEGLView::setScissorInPoints hook at 0x6ffffd6488c0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCScene::getHighestChildZ hook at 0x6ffffd621ba0 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled FMOD::System::init hook at 0x6ffffbf9f580 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled FMOD::ChannelControl::setVolume hook at 0x6ffffbefe480 for geode.loader
+23:31:21 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDirector::purgeDirector hook at 0x6ffffd68ee50 for geode.loader
+23:31:21 INFO  [Main] [Geode]:   Setting up directories
+23:31:21 DEBUG [Main] [Geode]:     Creating necessary directories
+23:31:21 DEBUG [Main] [Geode]:     Removing unnecessary directories
+23:31:21 DEBUG [Main] [Geode]:     Adding search paths
+23:31:21 INFO  [Main] [Geode]:   Refreshing mod graph
+23:31:21 INFO  [Main] [Geode]:     Queueing mods
+23:31:21 DEBUG [Main] [Geode]:       Searching S:\common\Geometry Dash\geode\mods
+23:31:21 INFO  [Main] [Geode]:     Populating mod list
+23:31:21 INFO  [Main] [Geode]:     Building mod graph
+23:31:21 DEBUG [Main] [Geode]:       geode.loader
+23:31:21 INFO  [Main] [Geode]:     Ordering mod stack
+23:31:21 INFO  [Main] [Geode]:     Loading early mods
+23:31:21 DEBUG [Main] [Geode]:     Took 0s. Continuing next frame...
+23:31:21 DEBUG [Main] [Geode]: Setting up IPC
+23:31:21 DEBUG [Main] [Geode]:   IPC set up
+23:31:21 INFO  [Main] [Geode]: Starting loader update check
+23:31:21 INFO  [Main] [Geode]: Entry took 0.015s
+23:31:21 DEBUG [arc-worker-3] [Geode]: IPv6 probe failed (connect): Network is unreachable
+23:31:22 DEBUG [arc-worker-0] [Geode]: Switching to Cloudflare for DNS resolution
+23:31:22 INFO  [Main] [Geode]: Loading non-early mods
+23:31:22 DEBUG [Main] [Geode]: Continuing mod graph refresh...
+23:31:22 INFO  [Main] [Geode]:   Finding problems
+23:31:22 DEBUG [Main] [Geode]:     geode.loader
+23:31:22 DEBUG [Main] [Geode]:   Took 0s
+23:31:22 DEBUG [Main] [Geode]: Verifying Loader Resources
+23:31:23 DEBUG [Main] [Geode]: Resources directory does not exist
+23:31:23 DEBUG [Main] [Geode]: Downloading Loader Resources
+23:31:23 DEBUG [arc-worker-0] [Geode]: Request to https://api.geode-sdk.org (via Google DNS) failed: -28
+23:31:23 INFO  [Main] [Geode]: Latest Geode version is v5.7.1
+23:31:23 DEBUG [arc-worker-3] [Geode]: Request to https://github.com/robots.txt (via Google DNS) timed out
+23:31:23 DEBUG [arc-worker-3] [Geode]: Request to https://api.geode-sdk.org (via Cloudflare DoH DNS) timed out
+23:31:23 DEBUG [arc-worker-3] [Geode]: Request to https://cloudflare.com/cdn-cgi/trace (via Cloudflare DoH DNS) timed out
+23:31:23 DEBUG [arc-worker-3] [Geode]: Request to https://github.com/robots.txt (via Cloudflare DoH DNS) timed out
+23:31:23 DEBUG [arc-worker-3] [Geode]: Request to https://cloudflare.com/cdn-cgi/trace (via System DNS) timed out
+23:31:23 DEBUG [arc-worker-3] [Geode]: Request to https://github.com/robots.txt (via System DNS) timed out
+23:31:23 DEBUG [arc-worker-3] [Geode]: DNS server Cloudflare: score 12.355
+23:31:23 DEBUG [arc-worker-3] [Geode]: DNS server Google: score -21.058
+23:31:23 DEBUG [arc-worker-3] [Geode]: DNS server Cloudflare DoH: score -47.500
+23:31:23 DEBUG [arc-worker-3] [Geode]: DNS server System: score -27.125
+23:31:25 DEBUG [Main] [Geode]: Downloaded Loader Resources
+23:31:25 DEBUG [Main] [Geode]: Loading mod resources
+23:31:25 DEBUG [Main] [Geode]: Adding resources
+23:31:25 DEBUG [Main] [Geode]:   geode.loader
+23:31:25 DEBUG [Main] [Geode]:     Adding sheet geode.loader/LogoSheet
+23:31:25 DEBUG [Main] [Geode]:     Adding sheet geode.loader/APISheet
+23:31:25 DEBUG [Main] [Geode]:     Adding sheet geode.loader/BlankSheet
+23:31:25 DEBUG [Main] [Geode]:     Adding sheet geode.loader/EventSheet
+23:31:29 DEBUG [Main] [Geode]: Enabled cocos2d::CCMenu::removeAllChildren hook at 0x6ffffab19760 for geode.loader
+23:31:29 DEBUG [Main] [Geode]: Enabled cocos2d::CCMenu::removeAllChildren hook at 0x6ffffab19760 for geode.loader
+23:31:29 INFO  [Main] [Geode]: All mods up to date!
+23:32:14 WARN  [Main] [Geode]: Unhandled block enter type 1
+23:32:14 WARN  [Main] [Geode]: Unhandled block leave type 1
+23:32:14 WARN  [Main] [Geode]: Unhandled block enter type 1
+23:32:14 WARN  [Main] [Geode]: Unhandled block leave type 1
+23:32:33 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.more_icons/more-icons-popup.png`
+23:32:33 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.more_icons/icon-list-popup.png`
+23:32:33 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.more_icons/view-icon-popup.png`
+23:32:33 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.more_icons/log-viewer-popup.png`
+23:32:33 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.more_icons/edit-icon-popup.png`
+23:32:33 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.more_icons/icon-name-popup.png`
+23:32:33 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.more_icons/select-color-popup.png`
+23:32:33 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.more_icons/load-editor-popup.png`
+23:32:33 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.more_icons/save-editor-popup.png`
+23:32:40 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.integrated_demonlist/aredl.png`
+23:32:40 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.integrated_demonlist/pemonlist.png`
+23:32:40 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `hiimjustin000.integrated_demonlist/aredl-packs.png`
+23:32:47 WARN  [Main] [Geode]: CCSprite::create - Using fallback texture for `gdutilsdevs.gdutils/Screenshot_1.png`
+23:33:06 WARN  [Main] [Geode]: Unhandled block enter type 1
+23:33:06 WARN  [Main] [Geode]: Unhandled block leave type 1
+23:33:37 INFO  [Main] [Geode]: Saving mod data...
+23:33:37 DEBUG [Main] [Geode]:   geode.loader
+23:33:37 INFO  [Main] [Geode]:   Took 0.001s
+23:33:37 INFO  [Main] [Geode]: Shutting down logger and async runtime..
+23:33:37 DEBUG [Main] [Geode]: Shutdown complete.

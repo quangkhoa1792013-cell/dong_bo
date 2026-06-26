@@ -1,0 +1,31 @@
+{
+    general: {
+        // Whether translations should be applied
+        enabled: false,
+        // The language of the server used in translations. On a client, "auto" will disable translating your own messages
+        serverLanguage: "auto",
+        // Your own language used in translations. On a client, "auto" will disable translating messages by other server members
+        clientLanguage: "en",
+        // How to display translated messages
+        // Valid: [REPLACE, TOOLTIP, APPEND]
+        displayMode: "REPLACE"
+    },
+    processing: {
+        // Translate all messages as plain strings. This improves translation quality but removes all message styling
+        desugar: false,
+        // A Regex pattern to check whether a received message should be translated
+        receivingRegex: "",
+        // Whether the relevant regex should blacklist messages from translation instead of whitelisting
+        receivingRegexIsBlacklist: true,
+        // A Regex pattern to check whether a sent message should be translated
+        sendingRegex: "",
+        // Whether the relevant regex should blacklist messages from translation instead of whitelisting
+        sendingRegexIsBlacklist: true
+    },
+    advanced: {
+        cacheSize: 256,
+        async: true,
+        translateMessageArguments: true,
+        debugLogs: false
+    }
+}

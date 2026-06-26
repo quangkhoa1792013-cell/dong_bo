@@ -1,0 +1,425 @@
+{
+		"geode": "5.7.1",
+		"gd": {
+			"win": "2.2081",
+			"android": "2.2081",
+			"ios": "2.2081",
+			"mac": "2.2081"
+		},
+		"version": "v1.1.13",
+		"id": "minemaker0430.gddp_integration",
+		"name": "GDDP - Demon Progression",
+		"developer": "ItsMochaTheOtter",
+		"description": "Adds various utilities for Demon Progression",
+		"links": {
+			"source": "https://github.com/Minemaker0430/GDDPIntegration/"
+		},
+
+		"issues": {
+			"info": "Submit problems to the GitHub or @itsmochatheotter on Discord.",
+			"url": "https://github.com/Minemaker0430/GDDPIntegration/issues"
+		},
+
+		"resources": {
+			"spritesheets": {
+				"Menu": [ "resources/DP_Menu/*.png" ],
+				"Difficulty": [ "resources/DP_Difficulty/*.png" ],
+				"PlusDifficulty": [ "resources/DP_PlusDifficulty/*.png" ],
+				"Bonus": [ "resources/DP_Bonus/*.png" ],
+				"Monthly": [ "resources/DP_Monthly/*.png" ],
+				"DifficultyText": [ "resources/DP_DifficultyText/*.png" ],
+				"PlusDifficultyText": [ "resources/DP_PlusDifficultyText/*.png" ],
+				"DifficultySmallText": [ "resources/DP_DifficultySmallText/*.png" ],
+				"PlusDifficultySmallText": [ "resources/DP_PlusDifficultySmallText/*.png" ],
+				"SkillBadge": [ "resources/DP_SkillBadge/*.png" ],
+				"Effects": [ "resources/DP_Effects/*.png" ]
+			},
+			"files": [
+				"resources/DP_Fonts/*.png",
+				"resources/DP_Fonts/*.fnt"
+			]
+		},
+
+		"tags": [
+			"gameplay",
+			"utility",
+			"interface",
+			"online",
+			"content"
+		],
+
+		"dependencies": {
+			"geode.node-ids": ">=1.23.3"
+		},
+
+	"settings": {
+		"refresh-stats": {
+			"name": "Refresh Stats",
+			"description": "Clears your completed levels in the mod's save data. Should only be used for accidental completions or bugs.\n\n<cr>This will NOT affect ranks.</c>",
+			"type": "custom:refresh-stats"
+		},
+		"reset-ranks": {
+			"name": "Reset Ranks",
+			"description": "Clears your completed ranks in the mod's save data. Should only be used for accidental completions or bugs.\n\n<cr>This will NOT affect progress.</c>",
+			"type": "custom:reset-ranks"
+		},
+		"reset-achievements": {
+			"name": "Reset Achievements",
+			"description": "Clears your completed achievements in the mod's save data. Should only be used for accidental completions or bugs.\n\n<cr>This will NOT affect ranks or progress.</c>",
+			"type": "custom:reset-achievements"
+		},
+		"bypass-section": {
+			"name": "Progression Bypass",
+			"description": "Options that let you bypass the lock system in the GDDP Menus.",
+			"type": "title"
+		},
+		"unlock-if-progressed": {
+			"name": "Unlock If Progressed",
+			"description": "Unlocks any pack you have progress in, regardless of rank status.\n<cy>(NOTE: Overrides \"Unlock All Tiers\" and \"Unlock All Legacy Packs\")</c>",
+			"type": "bool",
+			"default": false
+		},
+		"unlock-all-tiers": {
+			"name": "Unlock All Tiers",
+			"description": "Disables the Locked Tiers so you can Jump Difficulties to your heart's content.",
+			"type": "bool",
+			"default": false
+		},
+		"unlock-all-legacy": {
+			"name": "Unlock All Legacy Packs",
+			"description": "Disables Legacy Packs being Locked behind Main Packs.",
+			"type": "bool",
+			"default": false
+		},
+		"utility-section": {
+			"name": "Utility",
+			"description": "A set of extra/QoL features that may be helpful.",
+			"type": "title"
+		},
+		"skillset-badges": {
+			"name": "Enable Skillset Badges",
+			"description": "Enables Skillset Badges next to the difficulty faces.",
+			"type": "bool",
+			"default": true
+		},
+		"show-skills-in-list": {
+			"name": "Show Skills in List",
+			"description": "If disabled, Skillsets will only be shown on the Level Page.",
+			"type": "bool",
+			"default": true,
+			"enable-if": "skillset-badges"
+		},
+		"enable-search": {
+			"name": "Enable Search Menu",
+			"description": "Enables the Advanced GDDP Search Menu.",
+			"type": "bool",
+			"default": true
+		},
+		"enable-roulette": {
+			"name": "Enable Roulette",
+			"description": "Enables the GDDP Roulette.",
+			"type": "bool",
+			"default": true
+		},
+		"enable-recommendations": {
+			"name": "Enable Recommendations",
+			"description": "Enables GDDP Recommendations. Disabling this option will also disable the Recommended Glow.",
+			"type": "bool",
+			"default": true
+		},
+		"enable-recommended-btn": {
+			"name": "Enable Recommendation Button",
+			"description": "Enables the Star button next to recommended levels.",
+			"type": "bool",
+			"default": true,
+			"enable-if": "enable-recommendations"
+		},
+		"show-recommended-in-list": {
+			"name": "Show Recommendations Button in List",
+			"description": "If disabled, the star button on recommendations will only be shown on the Level Page.",
+			"type": "bool",
+			"default": true,
+			"enable-if": "enable-recommended-btn"
+		},
+		"disable-recommended-effect": {
+			"name": "Disable Recommended Glow",
+			"description": "Disables the Glow on Recommended Levels.",
+			"type": "bool",
+			"default": false,
+			"enable-if": "enable-recommendations"
+		},
+		"enable-random-level-picker": {
+			"name": "Enable Random Level Picker",
+			"description": "Enables the Button on GDDP Pages that pick a Random Level.",
+			"type": "bool",
+			"default": true
+		},
+		"show-xp": {
+			"name": "Enable XP",
+			"description": "Enables all XP-Related Buttons.",
+			"type": "bool",
+			"default": true
+		},
+		"enable-practice": {
+			"name": "Enable Practice",
+			"description": "Enables StartPos Copies to be accessed.",
+			"type": "bool",
+			"default": true
+		},
+		"enable-pinning": {
+			"name": "Enable Pack Pinning",
+			"description": "Enables the ability to Pin Packs in the GDDP Menu.",
+			"type": "bool",
+			"default": true
+		},
+		"enable-level-pinning": {
+			"name": "Enable Level Pinning",
+			"description": "Enables the ability to Pin Levels in the GDDP Menu.",
+			"type": "bool",
+			"default": true
+		},
+		"faces-section": {
+			"name": "Difficulty Faces",
+			"description": "Options relating to the GDDP Difficulties. Purely cosmetic.",
+			"type": "title"
+		},
+		"custom-difficulty-faces": {
+			"name": "Custom Difficulty Faces",
+			"description": "Shows custom difficulty faces in the GDDP Menus.",
+			"type": "bool",
+			"default": true
+		},
+		"show-outside-menus": {
+			"name": "Show Faces Outside Menus",
+			"description": "Makes Custom Difficulty Faces no longer require GDDP Menus to activate.",
+			"type": "bool",
+			"default": false,
+			"enable-if": "custom-difficulty-faces"
+		},
+		"replace-epic": {
+			"name": "Replace Epic Fire",
+			"description": "Replaces the Epic fire with the Plus fire in the GDDP Menus.",
+			"type": "bool",
+			"default": true,
+			"enable-if": "custom-difficulty-faces"
+		},
+		"override-ratings": {
+			"name": "Plus Tier Override",
+			"description": "Ratings will always show the Plus fire in the GDDP Menus when in a Plus Tier.",
+			"type": "bool",
+			"default": false,
+			"enable-if": "custom-difficulty-faces"
+		},
+		"hide-monthly-outside": {
+			"name": "Hide Monthly Outside Menus",
+			"description": "Hides GDDP difficulty faces outside menus for levels only in a GDDP Monthly Pack.",
+			"type": "bool",
+			"default": true,
+			"enable-if": "show-outside-menus"
+		},
+		"hide-bonus-outside": {
+			"name": "Hide Bonus Outside Menus",
+			"description": "Hides GDDP difficulty faces outside menus for levels only in a GDDP Bonus Pack.",
+			"type": "bool",
+			"default": false,
+			"enable-if": "show-outside-menus"
+		},
+		"menu-section": {
+			"name": "Menu Tweaks",
+			"description": "Options relating to Creator Menu Customization. Keep in mind some options may not be compatible with other mods.",
+			"type": "title"
+		},
+		"alt-button-texture": {
+			"name": "Alternate Button Texture",
+			"description": "Changes the menu button to something less nightmarish.",
+			"type": "bool",
+			"default": false
+		},
+		"compact-button": {
+			"name": "Compact Menu Button",
+			"description": "Changes the menu button to a Circle Button rather than a typical Creator Menu Button.",
+			"type": "bool",
+			"default": false
+		},
+		"replace-map-packs": {
+			"name": "Replace Map Packs",
+			"description": "Replaces the Map Packs button with the Demon Progression button.",
+			"type": "bool",
+			"default": false
+		},
+		"show-database-version": {
+			"name": "Show Database Version",
+			"description": "Shows what version of the database you're currently on.",
+			"type": "bool",
+			"default": false
+		},
+		"cosmetic-section": {
+			"name": "Cosmetic",
+			"description": "Options that relate to cosmetics in menus.",
+			"type": "title"
+		},
+		"achievement-popups": {
+			"name": "Achievement Popups",
+			"description": "Toggles the Achievement Popups that happen whenever you get a Rank, Plus Rank, Pack Completion, Monthly Completion, or Medal.",
+			"type": "bool",
+			"default": true
+		},
+		"disable-pack-achievements": {
+			"name": "Disable Pack Achievements",
+			"description": "Disables the Achievement Popups that happen whenever you complete a Legacy or Bonus Pack.",
+			"type": "bool",
+			"default": false
+		},
+		"disable-monthly-achievements": {
+			"name": "Disable Monthly Achievements",
+			"description": "Disables the Achievement Popups that happen whenever you complete the Monthly.",
+			"type": "bool",
+			"default": false
+		},
+		"disable-medal-achievements": {
+			"name": "Disable Medal Achievements",
+			"description": "Disables the Achievement Popups that happen whenever you get a Medal or Plus Medal.",
+			"type": "bool",
+			"default": false
+		},
+		"custom-pack-text": {
+			"name": "Fancy Pack Text",
+			"description": "Adds fancy text to pack names.",
+			"type": "bool",
+			"default": true
+		},
+		"custom-demon-labels": {
+			"name": "Fancy Demon Labels",
+			"description": "Adds fancy text to demon tiers.",
+			"type": "bool",
+			"default": true
+		},
+		"custom-level-name": {
+			"name": "Fancy Level Name",
+			"description": "Adds fancy text to level names.",
+			"type": "bool",
+			"default": true
+		},
+		"fancy-medals": {
+			"name": "Fancy Medals",
+			"description": "Adds fancy text to Medals & Plus Medals.",
+			"type": "bool",
+			"default": true
+		},
+		"override-gold-text": {
+			"name": "Override Completed Text",
+			"description": "Fancy text overrides gold text on completed packs.",
+			"type": "bool",
+			"default": true
+		},
+		"disable-crystals": {
+			"name": "Disable Crystal Effect",
+			"description": "Disables the crystal effect that appears over text.",
+			"type": "bool",
+			"default": false
+		},
+		"disable-stars": {
+			"name": "Disable Stars Effect",
+			"description": "Disables the stars effect that appears over text.",
+			"type": "bool",
+			"default": false
+		},
+		"disable-bevel": {
+			"name": "Disable Bevel Effect",
+			"description": "Disables the bevel effect that appears over text.",
+			"type": "bool",
+			"default": false
+		},
+		"disable-text-gradient": {
+			"name": "Disable Fancy Text Gradient",
+			"description": "Disables the gradient that appears over text. <cr>(Not recommended, it makes the text look boring)</c>",
+			"type": "bool",
+			"default": false
+		},
+		"disable-fancy-bonus-text": {
+			"name": "Disable Fancy Bonus Pack Text",
+			"description": "Disables the text effects on bonus packs.",
+			"type": "bool",
+			"default": false
+		},
+		"disable-fancy-monthly-text": {
+			"name": "Disable Fancy Monthly Pack Text",
+			"description": "Disables the text effects on monthly packs.",
+			"type": "bool",
+			"default": false
+		},
+		"restore-bg-color": {
+			"name": "Vanilla Background Color",
+			"description": "Changes the background color in the GDDP Menus to the Vanilla Color.",
+			"type": "bool",
+			"default": false
+		},
+		"disable-year-color": {
+			"name": "Disable Year Colors",
+			"description": "Disables the subtle Background coloring on Monthly Packs.",
+			"type": "bool",
+			"default": false
+		},
+		"show-support": {
+			"name": "Show Support Button",
+			"description": "Controls the support button in the GDDP Menu. No hard feelings if you disable this.",
+			"type": "bool",
+			"default": true
+		},
+		"show-monthly-timer": {
+			"name": "Show Monthly Timer",
+			"description": "Shows the time until the next Monthly Pack.",
+			"type": "bool",
+			"default": true
+		},
+		"highlight-current-tier": {
+			"name": "Highlight Current Tier",
+			"description": "Highlights the tier you're currently working towards.",
+			"type": "bool",
+			"default": false
+		},
+		"highlight-latest-monthly": {
+			"name": "Highlight Latest Monthly",
+			"description": "Highlights the latest Monthly Pack.",
+			"type": "bool",
+			"default": true
+		},
+		"legacy-monthly-tab": {
+			"name": "Legacy Monthly Tab",
+			"description": "Makes the Monthly Tab all one page, like it was before.",
+			"type": "bool",
+			"default": false
+		},
+		"show-monthly-notification": {
+			"name": "Show Monthly Notification",
+			"description": "Shows a notification on the Monthly Tab when a new Monthly Pack is out.",
+			"type": "bool",
+			"default": true
+		},
+		"compatibility-section": {
+			"name": "Compatibility",
+			"description": "Compatibility options for certain mods that may conflict.",
+			"type": "title"
+		},
+		"dont-move-side-btns": {
+			"name": "Don't Move Side Buttons",
+			"description": "Disables moving the Side Buttons from BetterInfo and GDRoulette.",
+			"type": "bool",
+			"default": false
+		},
+		"lower-xp": {
+			"name": "Lower Demon XP Button",
+			"description": "Lowers the Demon XP Button so it doesn't overlap with other buttons.",
+			"type": "bool",
+			"default": false,
+			"enable-if": "show-xp"
+		},
+		"move-skill-badges": {
+			"name": "Move Skillset Badges",
+			"description": "Moves the Skillset Badges on the Level Info page to the right.",
+			"type": "bool",
+			"default": false,
+			"enable-if": "skillset-badges"
+		}
+	}
+}

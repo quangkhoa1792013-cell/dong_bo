@@ -1,0 +1,43 @@
+{
+    "geode": "5.0.0",
+    "gd": {
+        "win": "*",
+        "android": "*",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
+    "id": "prevter.imageplus",
+    "name": "ImagePlus",
+    "version": "v1.1.0",
+    "developer": "prevter",
+    "description": "API mod that adds more image formats",
+    "early-load": true,
+    "tags": [
+        "developer",
+        "utility",
+        "enhancement",
+        "api"
+    ],
+    "api": {
+        "include": [
+            "include/*.hpp"
+        ]
+    },
+    "links": {
+        "source": "https://github.com/prevter/imageplus"
+    },
+    "settings": {
+        "force-autodetect": {
+            "type": "bool",
+            "name": "Force Format Autodetect",
+            "description": "Ignores the requested image format and always tries to autodetect it from the file.  \nAllows to use different image formats in texture packs and more.  \nAdds a small performance overhead, but it is negligible.",
+            "default": true
+        },
+        "disable-png": {
+            "type": "bool",
+            "name": "Disable custom PNG loader",
+            "description": "Disables the custom PNG loader to prefer the cocos2d one instead.  \nUseful if you experience issues with some images.",
+            "default": false
+        }
+    }
+}

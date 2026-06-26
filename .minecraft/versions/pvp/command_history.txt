@@ -1,0 +1,50 @@
+/godenchant khoablabla god 255
+/godenchant khoablabla god max
+/godenchant khoablabla bth
+/give nguhhhoangduong dirt 100000000
+/stop
+/playsound minecraft:custom_music voice
+/playsound minecraft:custom_music ui
+/playsound minecraft:custom_music ambient
+/playsound minecraft:custom_music master @a ~ ~ ~ 1 1
+/execute console command "minecraft:playsound custom.dongvaianh master %{_target}% ~ ~ ~ 1 1"
+/playsound minecraft:custom_music master @a ~ ~ ~ 1 1
+/minecraft:playsound minecraft:custom_music master @a ~ ~ ~ 1 1
+/openaudiomc register
+/oa accept
+/openaudiomc register
+/openaudiomc playlist
+/openaudiomc playlist add
+/openaudiomc playlist add d
+/openaudiomc playlist view
+/openaudiomc link
+/openaudio play nguhhhoangduong files:dungdongvaianh.ogg
+/openaudio play khoablablafiles:dungdongvaianh.ogg
+/openaudio play khoablabla files:dungdongvaianh.ogg
+/openaudio play khoablabla files:dungdongvaianh.ogg 10
+/openaudio play khoablabla files:dungdongvaianh.ogg <options> 1
+/openaudio play khoablabla files:dungdongvaianh.ogg <options>
+/audio play khoablabla
+/audio play nguhhhoangduong
+/audio
+/kick nguhhhoangduong lo
+/kick nguhhhoangduong ngu
+/clear nguhhhoangduong
+//
+/clear nguhhhoangduong
+/openaudio help
+/audio
+/sk reload godenchant.sk
+/spawnmob zombie 10000000
+/spawnmob zombie 10
+//
+/minecraft:tp @e khoablabla
+/godenchant khoablabla
+/godenchant khoablabla god max
+/minecraft:tp @e
+/minecraft:kill @e
+/gamerule spawn_mobs false
+/minecraft:kill @e
+/godenchant nguhhhoangduong bth
+/godenchant nguhhhoangduong god max
+/stop

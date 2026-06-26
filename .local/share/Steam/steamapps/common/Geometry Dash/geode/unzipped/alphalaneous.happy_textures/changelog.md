@@ -1,0 +1,283 @@
+# 2.1.11
+- The textures are happy again yay!!
+
+# 2.1.10
+- Look what you did :(
+
+# 2.1.9
+- Remove intrusive notices
+
+# 2.1.8
+- Make it even more clear that this is not Texture Workshop
+
+# 2.1.7
+- Show alert that Happy Textures is not Texture Workshop to try and reduce the amount of reports I get about a mod I did not make since people lack reading comprehension skills. 
+
+# 2.1.6
+- Bug fixes and performance improvements
+
+# 2.1.5
+- Fix a crash
+
+# 2.1.4
+- Add custom spritesheet support (Experimental)
+- Add `cascade-color` and `cascade-opacity` bools
+- Attempt to fix random sprites not working
+- Fix getting by index not working with query selectors
+
+# 2.1.3
+- Fix bug where getting by index required the full namespace of the type
+
+# 2.1.2
+- Add onGeode callback to MenuLayer
+
+# 2.1.1
+- Fix some crashes
+
+# 2.1.0
+- 2.2081 support
+- Cleanup code
+- Fix border flicker
+- Fix a mysterious memory leak
+
+# 2.0.23
+- Fix a small oversight that could break transitions
+
+# 2.0.21 & 2.0.22
+- Attempt to fix a rare crash
+
+# 2.0.20
+- Change how touch is handled
+  - Any node can have touch and hover events now
+- Fix onQuit crashes
+
+# 2.0.19
+- Fixed a bug that caused UI modifications to not actually modify the UI haha
+
+# 2.0.18
+- Performance Improvements
+- Bug fixes
+- More ways to define color (hex, rgb(a), hsv(a), hsl(a), lab, and lch)
+
+Example:
+`"color": "hsv(200, 75, 80)"`
+
+# 2.0.17
+- Just not do it like that, why am I doing it like that, apparently doing it like that breaks, here's another stupid update, doing it like that shouldn't break, I am slowly trying to make things rely less on hooks, but sometimes you have to. The world is evil with it's sussy impostor nodes that do sussy things! 
+
+# 2.0.16
+- Fix a bug with setting sprites
+
+# 2.0.15
+- Hello, Human Resources?!
+- (Another attempt at a crash fix on android BetterEdit that I personally cannot replicate)
+
+# 2.0.14
+- This might fix the BetterEdit crash, idk.
+
+# 2.0.13
+- FIx a really stupid oversight
+
+# 2.0.12
+- Fix sprites on new nodes.
+- Fix CCMenuItemSpriteExtra content size on new nodes.
+- Fix crash when using an invalid query for the query selector
+- Fix MenuLayer not refreshing on pack apply
+
+# 2.0.11
+- Fix a crash when pressing buttons
+
+# 2.0.10
+- Actually fix a crash
+
+# 2.0.9
+- Fix a crash
+
+# 2.0.8
+- Rewrite hover logic (layering properly works now)
+- Add support for more sprite formats (GIF, JPEG XL, WebP, QOI) thanks to Prevter's ImagePlus.
+- Add scaling size modes
+- Fixed a potential crash when other mods do stupid *** like deleting a node manually right after autoreleasing.
+- Fix LoadingLayer not being modified
+- Add MenuLayer::onQuit callback
+
+# 2.0.7
+- Fix a crash
+
+# 2.0.6
+- Quick fixes you'll never see as an end user
+- Still haven't fixed certain reported issues that require extensive testing, please be patient on those
+
+# 2.0.5
+- No more flicker on table cells
+- Reduce hooks (using Alpha's Geode Utils)
+- Performance Improvements
+- Code cleanup
+
+# 2.0.4
+- Fix a crash
+
+# 2.0.3
+- Fix a cocos bug
+
+# 2.0.2
+- Bug fix
+
+# 2.0.1
+- Fix a crash when a texture name was too short
+- Update UI at end of frame rather than start
+
+# 2.0.0
+**NOTICE! Modifying nodes by ID is removed. You must now modify them by their class name instead.**
+- Code cleanup
+- Multi pack UI modding (packs can now modify other packs based on priority in Texture Loader)
+- Rewrite mod to be more efficient
+- Remove old ID based modding
+- Improve reliability
+- Scheduling Updates
+- Bug fixes
+  - Pack IDs for custom nodes work once again
+  - No longer double activates transitions
+  - Hot reload fixes
+
+# 1.9.10
+- Bug fixes
+
+# 1.9.9
+- Fix sprite crash
+
+# 1.9.8
+- Add basic support for SimpleAxisLayout
+- Fix setDisplayFrame not using changed textures
+
+# 1.9.7
+- Fix 2
+
+# 1.9.6
+- Fix
+
+# 1.9.5
+- iOS support
+
+# 1.9.4
+- Fix a bug with sprite frames not being able to be set
+- Fix some load delay
+
+# 1.9.3
+**NOTICE! Modifying nodes by ID will soon be depreciated. Once the next GD update comes out, I will be removing that feature in favor of modifying nodes by their class name. This is the name BEFORE the one in quotes in DevTools. For example `ui/cvolton.betterinfo$ExtendedLevelInfo.json` will become `ui/ExtendedLevelInfo.json` and anything in the nodes folder will no longer work and should be placed in the UI folder.**
+- Fixed crash when pressing space on main menu for mac
+
+# 1.9.2
+- Fix a memory leak when setting a font file on a CCLabelBMFont
+- Remove batch node hack :P
+
+# 1.9.1
+- Fix a crash with labels
+- Revamp Texture Loader pack nodes
+- Add Friend Requests cells to the default cell color modifications
+- Use geode::Popup for alerts
+- General code cleanup
+
+# 1.9.0
+- Conditionals (If statements) (See Wiki)
+- Root node shortcut (See Wiki)
+- More variables (See Wiki)
+- Updated Rift
+
+# 1.8.8
+- Implement a fix for another mod's mistake :P
+
+# 1.8.7
+- Fix a very teeny bug that may break MenuLayer changes
+
+# 1.8.6
+- Added "after-transition" object for layers in a scene, allowing for you to only make changes after the transition finishes (see wiki for more details)
+- Fixed cache failing to be reset, resulting in missing textures when a pack is unapplied
+
+# 1.8.5
+- Cleanup filesystem code
+- Fix a crash when there is an invalid path (hopefully)
+- Fix an issue with CCSpriteWithHue
+
+# 1.8.4
+- Actually fix loading individual sprites from init
+
+# 1.8.3
+- Fix loading individual sprites from init
+
+# 1.8.2
+- Fix some layouting issues
+- Fix duplicated node modifications for certain layers
+- Fix individual sprites not working if only some qualities are present
+- Fix applied packs not updating (uses a new Texture Loader API, make sure Texture Loader is up to date if you experience this issue!)
+
+# 1.8.1
+- Fix crash on non-windows
+- Change individual sprite changing logic
+
+# 1.8.0
+- Support for retexturing individual sprites outside of spritesheets (see wiki for more details)
+- Support for disabling batch nodes (for UI purposes, in levels they will not be disabled)
+
+# 1.7.8
+- list-cell-selected added to hardcoded color modifications for leaderboards
+- Changed hook prio logic
+- Mac support for everything
+
+# 1.7.7 
+- Zipped packs should work properly now
+- Fixed issues with file listener
+- Fixed issues with path separators
+
+# 1.7.6
+- Node by typeid bugfix
+
+# 1.7.5
+- Allow inputting hex colors
+- Fix sprite frame texture rotate bug
+- Fix an issue where onCreator and onGarage wouldn't work
+
+# 1.7.4
+- Fix a crash that can occur when pressing space on the main menu
+- Fix a crash that can occur with invalid parents
+- Added new scroll-to-top attribute for ScrollLayers
+- Added new lock-attributes attribute to reset attributes every frame 
+
+# 1.7.3
+- Fix an issue with MenuLayer::onPlay callbacks not working because apparently it is a meanie head and wanted to be rude :(
+
+# 1.7.2
+- Add the ability to run certain button callbacks anywhere
+
+# 1.7.1
+- Fix a freeze that could happen on launch if GD was on a separate drive
+- Fix node modifications not properly reloading on pack change
+- Getting a node by type now allows for any class to be passed in
+
+# 1.7.0
+- Node Specific Changes Updates:
+  - Now any node type can be modified
+  - Node type modification code simplified (better performance)
+  - Node type modification json are loaded on launch (lag fix)
+  - See wiki on new Node type information
+- Random Sprites
+  - Pack makers can now assign a sprite to be randomized
+  - See wiki for more information
+- Fix changing button sprites not having proper content sizes
+- Fix sounds not playing
+- Allow stacking multiple events on a button instead of only 1
+- General performance improvements
+
+# 1.6.2
+- Fix a crash with cursed FLAlertLayers
+
+# 1.6.1
+- Bug fix for variables not working in popups created by HT Packs
+
+# 1.6.0
+- <cg>Add extensive label variables with RIFT</c>
+- Add color changing for music library cells
+- Code cleanup
+
+# <1.6.0
+- Add everything

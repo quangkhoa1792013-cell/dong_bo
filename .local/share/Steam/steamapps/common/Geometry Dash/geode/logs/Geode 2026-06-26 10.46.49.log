@@ -1,0 +1,65 @@
+10:46:49 INFO  [Main] [Geode]: Running Geode v5.7.1 in Geometry Dash v2.2081 on Windows
+10:46:49 INFO  [Main] [Geode]: Loader commit: 2cfd33a, Bindings commit: 64da1418
+10:46:49 INFO  [Main] [Geode]: Setting up internal mod
+10:46:49 INFO  [Main] [Geode]: Setting up loader
+10:46:49 INFO  [Main] [Geode]:   Loading launch arguments
+10:46:49 INFO  [Main] [Geode]:   Setting up crash handler
+10:46:49 INFO  [Main] [Geode]:   Loading hooks
+10:46:49 DEBUG [Main] [Geode]:     Enabled CCTextInputNode::ccTouchBegan hook at 0x140051330 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled LoadingLayer::loadAssets hook at 0x14032ed60 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCEGLView::pumpRawInput hook at 0x6ffffcdd8060 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCEGLView::setupWindow hook at 0x6ffffcdd8a60 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCApplication::updateControllerKeys hook at 0x6ffffcdd3eb0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled MoreOptionsLayer::onKeybindings hook at 0x1400dcf70 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled onGLFWError hook at 0x6ffffcdd7700 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled onGLFWError2 hook at 0x6ffffcdd7760 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled GameManager::reloadAllStep5 hook at 0x14018a7d0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCNode::getUserObject hook at 0x6ffffcd63600 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCNode::setUserObject hook at 0x6ffffcd650b0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled LevelPage::onPlay hook at 0x14031d880 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled LoadingLayer::init hook at 0x14032e4c0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled LoadingLayer::loadAssets hook at 0x14032ed60 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled MenuLayer::init hook at 0x140333a90 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled ProfilePage::getUserInfoFinished hook at 0x1403c5ee0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDirector::willSwitchToScene hook at 0x6ffffce202a0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDirector::popScene hook at 0x6ffffce1eb70 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDirector::popToSceneStackLevel hook at 0x6ffffce1ed50 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled AppDelegate::trySaveGame hook at 0x140083500 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCScheduler::update hook at 0x6ffffce22b60 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCKeyboardDispatcher::keyToString hook at 0x6ffffcda5070 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDrawNode::init hook at 0x6ffffcd752c0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCMenuItem::activate hook at 0x6ffffcdba140 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCMenu::ccTouchEnded hook at 0x6ffffcdb9070 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::create hook at 0x6ffffcdeb4d0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::createWithSpriteFrameName hook at 0x6ffffcdeb6c0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::initWithSpriteFrame hook at 0x6ffffcdebbd0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::initWithSpriteFrameName hook at 0x6ffffcdebc40 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSprite::initWithFile hook at 0x6ffffcdebb60 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSpriteFrameCache::spriteFrameByName hook at 0x6ffffcdf2820 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCSpriteBatchNode::initWithTexture hook at 0x6ffffcdee650 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCFileUtils::sharedFileUtils hook at 0x6ffffcddb060 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCFileUtils::fullPathForFilename hook at 0x6ffffcdce990 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCMenu::initWithArray hook at 0x6ffffcdb9460 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCEGLView::setScissorInPoints hook at 0x6ffffcdd88c0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCScene::getHighestChildZ hook at 0x6ffffcdb1ba0 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled FMOD::System::init hook at 0x6ffff9f8f580 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled FMOD::ChannelControl::setVolume hook at 0x6ffff9eee480 for geode.loader
+10:46:49 DEBUG [Main] [Geode]:     Enabled cocos2d::CCDirector::purgeDirector hook at 0x6ffffce1ee50 for geode.loader
+10:46:49 INFO  [Main] [Geode]:   Setting up directories
+10:46:49 DEBUG [Main] [Geode]:     Creating necessary directories
+10:46:49 DEBUG [arc-worker-3] [Geode]: IPv6 probe failed (connect): Network is unreachable
+10:46:49 DEBUG [Main] [Geode]:     Removing unnecessary directories
+10:46:49 DEBUG [Main] [Geode]:     Adding search paths
+10:46:49 INFO  [Main] [Geode]:   Refreshing mod graph
+10:46:49 INFO  [Main] [Geode]:     Queueing mods
+10:46:49 DEBUG [Main] [Geode]:       Searching Z:\home\khoablabla\.local\share\Steam\steamapps\common\Geometry Dash\geode\mods
+10:46:49 INFO  [Main] [Geode]:     Populating mod list
+10:46:49 INFO  [Main] [Geode]:     Building mod graph
+10:46:49 DEBUG [Main] [Geode]:       geode.loader
+10:46:49 INFO  [Main] [Geode]:     Ordering mod stack
+10:46:49 INFO  [Main] [Geode]:     Loading early mods
+10:46:49 DEBUG [Main] [Geode]:     Took 0s. Continuing next frame...
+10:46:49 DEBUG [Main] [Geode]: Setting up IPC
+10:46:49 DEBUG [Main] [Geode]:   IPC set up
+10:46:49 INFO  [Main] [Geode]: Starting loader update check
+10:46:49 INFO  [Main] [Geode]: Entry took 0.011s

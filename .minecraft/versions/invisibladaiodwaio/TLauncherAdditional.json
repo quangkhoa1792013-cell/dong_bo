@@ -1,0 +1,369 @@
+{
+  "activateSkinCapeForUserVersion": false,
+  "skipHashsumValidation": false,
+  "tlauncherVersion": 0,
+  "modpack": {
+    "modpackMemory": false,
+    "memory": 0,
+    "id": -2334234797559,
+    "name": "invisibladaiodwaio",
+    "favorite": false,
+    "version": {
+      "mods": [
+        {
+          "stateGameElement": "active",
+          "id": 10000020,
+          "name": "TL skin and cape",
+          "author": "tlauncher.org",
+          "uuid": "cd3ef9ea-62dd-11e6-b39e-002590a1379b",
+          "linkProject": "https://tlauncher.org",
+          "favorite": false,
+          "categories": [],
+          "picture": 73988,
+          "pictures": [
+            73989,
+            73990
+          ],
+          "lanName": "tl-skin-and-cape",
+          "version": {
+            "id": 11022254,
+            "name": "1.38",
+            "updateDate": 1761225446000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 46,
+                "name": "1.20.1"
+              },
+              {
+                "id": 45,
+                "name": "1.20"
+              }
+            ],
+            "metadata": {
+              "sha1": "183cbb2ffba9fa711c0cc9fb32154f4bf0679ba8",
+              "size": 1208428,
+              "path": "mods/tl_skin_cape_fabric_1.20_1.20.1-1.38.jar",
+              "url": "/mods/40960586/11022250/tl_skin_cape_fabric_1.20_1.20.1-1.38.jar"
+            },
+            "installed": 2180096,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 2,
+                "name": "fabric"
+              }
+            ]
+          },
+          "popularity": 5,
+          "downloadMonth": 332992,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [],
+          "lastGameVersion": {
+            "id": 69,
+            "name": "26.1.2"
+          },
+          "updated": 1777020211000,
+          "update": 1777020211000,
+          "downloadALL": 666902441,
+          "available": true,
+          "parser": false,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 394468,
+          "name": "Sodium",
+          "author": "jellysquid_",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/sodium",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 22,
+              "name": "mc_miscellaneous",
+              "shortName": "mixed",
+              "nesting": 0
+            }
+          ],
+          "picture": 809954,
+          "pictures": [],
+          "lanName": "sodium",
+          "version": {
+            "id": 6260639,
+            "name": "sodium-fabric-0.5.13+mc1.20.1",
+            "updateDate": 1741024355000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 46,
+                "name": "1.20.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "bcdbf37d9494e405cba210d7a80ed58e756297b5",
+              "size": 971552,
+              "path": "mods/sodium-fabric-0.5.13+mc1.20.1.jar",
+              "url": "/mods/394468/6260639/sodium-fabric-0.5.13+mc1.20.1.jar"
+            },
+            "installed": 2395250,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 2,
+                "name": "fabric"
+              }
+            ]
+          },
+          "popularity": 5,
+          "downloadMonth": 889,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [],
+          "lastGameVersion": {
+            "id": 69,
+            "name": "26.1.2"
+          },
+          "updated": 1779051600000,
+          "update": 1779051600000,
+          "downloadALL": 50074068,
+          "available": true,
+          "parser": true,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 306612,
+          "name": "Fabric API",
+          "author": "",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/fabric-api",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 7,
+              "name": "library_api",
+              "shortName": "api",
+              "nesting": 0
+            }
+          ],
+          "picture": 778706,
+          "pictures": [],
+          "lanName": "fabric-api",
+          "version": {
+            "id": 8073259,
+            "name": "fabric-api-0.92.9+1.20.1",
+            "updateDate": 1778501083000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 46,
+                "name": "1.20.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "89c79de1c8e17f3d34fded3a2fe401e7e60a707d",
+              "size": 2111565,
+              "path": "mods/fabric-api-0.92.9%2B1.20.1.jar",
+              "url": "/mods/306612/8073259/fabric-api-0.92.9%252B1.20.1.jar"
+            },
+            "installed": 87678,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 2,
+                "name": "fabric"
+              }
+            ]
+          },
+          "popularity": 5,
+          "downloadMonth": 1786,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [],
+          "lastGameVersion": {
+            "id": 69,
+            "name": "26.1.2"
+          },
+          "updated": 1780779600000,
+          "update": 1780779600000,
+          "downloadALL": 23323908,
+          "available": true,
+          "parser": true,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 348521,
+          "name": "Cloth Config API (FabricForgeNeoForge)",
+          "author": "shedaniel",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/cloth-config",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 7,
+              "name": "library_api",
+              "shortName": "api",
+              "nesting": 0
+            }
+          ],
+          "picture": 821133,
+          "pictures": [],
+          "lanName": "cloth-config-forge",
+          "version": {
+            "id": 5729104,
+            "name": "cloth-config-11.1.136-fabric",
+            "updateDate": 1726506825000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 46,
+                "name": "1.20.1"
+              },
+              {
+                "id": 45,
+                "name": "1.20"
+              }
+            ],
+            "metadata": {
+              "sha1": "d5fe84a0cc9ed5c7290a76ba570e1f8716afecab",
+              "size": 1172214,
+              "path": "mods/cloth-config-11.1.136-fabric.jar",
+              "url": "/mods/348521/5729104/cloth-config-11.1.136-fabric.jar"
+            },
+            "installed": 315112,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 2,
+                "name": "fabric"
+              }
+            ]
+          },
+          "popularity": 5,
+          "downloadMonth": 155,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [],
+          "lastGameVersion": {
+            "id": 69,
+            "name": "26.1.2"
+          },
+          "updated": 1774472400000,
+          "update": 1774472400000,
+          "downloadALL": 14294004,
+          "available": true,
+          "parser": true,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 1509990,
+          "name": "Invincible Wobble Edit Mod",
+          "author": "HamoodeG",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/invincible-wobble-edit-mod",
+          "favorite": false,
+          "categories": [],
+          "picture": 1393078,
+          "pictures": [],
+          "lanName": "invincible-wobble-edit-mod",
+          "version": {
+            "id": 7945740,
+            "name": "wobble-1.0.2",
+            "updateDate": 1776527392000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 46,
+                "name": "1.20.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "8eaca1d171098905ba7bb6794e0cd4b400b0c26e",
+              "size": 70554,
+              "path": "mods/wobble-1.0.2.jar",
+              "url": "/mods/1509990/7945740/wobble-1.0.2.jar"
+            },
+            "installed": 435,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 2,
+                "name": "fabric"
+              }
+            ]
+          },
+          "popularity": 1,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 204,
+              "name": "Mod Menu",
+              "gameEntityId": 308702,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 332,
+              "name": "Cloth Config API (FabricForgeNeoForge)",
+              "gameEntityId": 348521,
+              "dependencyType": "required",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 46,
+            "name": "1.20.1"
+          },
+          "updated": 1776459600000,
+          "update": 1776459600000,
+          "downloadALL": 435,
+          "available": true,
+          "parser": true,
+          "totalComments": 0
+        }
+      ],
+      "resourcePacks": [],
+      "maps": [],
+      "shaderpacks": [],
+      "gameVersionDTO": {
+        "id": 46,
+        "name": "1.20.1"
+      },
+      "minecraftVersionName": {
+        "id": 11528,
+        "name": "0.19.3"
+      },
+      "id": -2334234808501,
+      "name": "1.0",
+      "available": false,
+      "remove": false,
+      "minecraftVersionTypes": [
+        {
+          "id": 2,
+          "name": "fabric"
+        }
+      ]
+    },
+    "userInstall": false,
+    "populateStatus": false,
+    "available": false,
+    "parser": false,
+    "totalComments": 0
+  },
+  "source": "local_version_repo",
+  "jar": "1.20.1",
+  "skinVersion": true
+}

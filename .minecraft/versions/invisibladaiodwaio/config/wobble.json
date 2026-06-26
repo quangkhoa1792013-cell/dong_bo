@@ -1,0 +1,12 @@
+{
+  "bouncingEnabled": false,
+  "rulerEnabled": true,
+  "syncConnectedWobbles": true,
+  "bouncingIntensity": 1.0,
+  "rulerIntensity": 10.0,
+  "durationSeconds": 2.0,
+  "speedMultiplier": 1.0,
+  "wobbleBlocks": true,
+  "wobbleEntities": true,
+  "wobbleGui": true
+}

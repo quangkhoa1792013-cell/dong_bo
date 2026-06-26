@@ -1,0 +1,103 @@
+{
+    "geode": "5.7.1",
+    "version": "v4.4.6",
+    "gd": {
+        "win": "2.2081",
+        "android": "2.2081",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
+    "id": "cvolton.betterinfo",
+    "name": "BetterInfo",
+    "developer": "Cvolton",
+    "description": "betterinfo geode real (not fake)",
+    "links": {
+        "source": "https://github.com/cvolton/betterinfo-geode"
+    },
+    "tags": [
+        "online",
+        "enhancement",
+        "interface",
+        "utility"
+    ],
+    "early-load": true,
+    "dependencies": {
+        "geode.node-ids": "v1.23.0",
+        "cvolton.misc_bugfixes": "v1.10.0",
+        "cvolton.level-id-api": "v2.0.0",
+        "eclipse.eclipse-menu": {
+            "version": "v1.8.1",
+            "required": false
+        },
+        "km7dev.server_api": {
+            "version": "v4.0.0",
+            "required": false
+        }
+    },
+    "settings": {
+        "auto-submit": {
+            "name": "Auto submit to leaderboards",
+            "description": "Automatically submits your level score to the level leaderboards upon exiting a level",
+            "type": "bool",
+            "default": false
+        },
+        "alt-button": {
+            "name": "Alternative button texture",
+            "description": "BI :)",
+            "type": "bool",
+            "default": false
+        },
+        "level-info": {
+            "name": "Enable Extended Level Info",
+            "description": "Whether the custom level info dialog from BI should be used",
+            "type": "bool",
+            "default": true
+        },
+        "fix-green-users": {
+            "name": "Fix broken usernames",
+            "description": "Whether destroyed green usernames no longer returned by the servers should be fixed using data from the GDHistory project",
+            "type": "bool",
+            "default": true
+        },
+        "white-id": {
+            "name": "White Level ID text",
+            "description": "Displays level IDs in level search white instead of grey. Useful if you have transparent lists",
+            "type": "bool",
+            "default": false
+        },
+        "show-comment-ids": {
+            "name": "Show comment IDs",
+            "description": "Whether comment IDs should be shown in comment cells",
+            "type": "bool",
+            "default": false
+        },
+        "show-level-ids": {
+            "name": "Show level IDs",
+            "description": "Whether level IDs should be shown in level cells",
+            "type": "bool",
+            "default": true
+        },
+        "exact-comment-date": {
+            "name": "Show Exact Comment Dates (read info)",
+            "description": "## Highly experimental feature\nShows full comment dates in YYYY-MM-DD using the GDHistory Date Estimator (online). Not fully accurate yet.\nThe comment date database is not complete yet, so estimates from the equivalent of today's date x years ago to September 1st of the same year will be highly inaccurate. This means that as of the time of addition of this feature all dates between xxxx-02-25 and xxxx-09-01 cannot be trusted yet.",
+            "type": "bool",
+            "default": false
+        },
+        "reset-saved-filters": {
+            "name": "Reset saved level filters on Restart",
+            "description": "Whether saved level filters should be reset when the game is restarted",
+            "type": "bool",
+            "default": true
+        }
+    },
+    "resources": {
+        "sprites": [
+            "resources/*.png"
+        ],
+        "spritesheets": {
+            "SearchButtons-410": [
+                "resources/searchbuttons-410/*.png"
+            ]
+        }
+    }
+}

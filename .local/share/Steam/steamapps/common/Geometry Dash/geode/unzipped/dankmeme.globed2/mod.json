@@ -1,0 +1,149 @@
+{
+    "id": "dankmeme.globed2",
+    "name": "Globed",
+    "developer": "dankmeme",
+    "geode": "5.6.1",
+    "version": "v2.1.4",
+    "gd": {
+        "win": "2.2081",
+        "android": "2.2081",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
+    "description": "Feature-rich multiplayer mod",
+    "dependencies": {
+        "geode.node-ids": ">=v1.10.0",
+        "prevter.imageplus": {
+            "version": ">=v1.1.0",
+            "required": false
+        },
+        "geode.devtools": {
+            "version": ">=v1.13.1",
+            "required": false
+        }
+    },
+    "incompatibilities": {},
+    "links": {
+        "homepage": "https://globed.dev",
+        "source": "https://github.com/GlobedGD/globed2",
+        "community": "https://discord.gg/d56q5Dkdm3"
+    },
+    "tags": [
+        "online"
+    ],
+    "settings": {
+        "force-no-preload": {
+            "type": "bool",
+            "name": "Disable Preloading",
+            "description": "Forcibly disables asset preloading, overriding any other option set in Globed settings. This should only be set if Globed crashes on launch due to preloading.",
+            "default": false
+        },
+        "keybinds-title": {
+            "type": "title",
+            "name": "Keybinds"
+        },
+        "keybind-voice-chat": {
+            "type": "keybind",
+            "name": "Voice Chat Activate",
+            "description": "Activates voice chat when held, allowing you to talk to other players in the same level",
+            "default": "V"
+        },
+        "keybind-deafen": {
+            "type": "keybind",
+            "name": "Deafen",
+            "description": "Toggles deafen mode, which prevents you from hearing other players and talking in voice chat",
+            "default": "B"
+        },
+        "keybind-hide-players": {
+            "type": "keybind",
+            "name": "Hide Players",
+            "description": "Toggles visibility of other players in a level",
+            "default": []
+        },
+        "keybind-emote-0": {
+            "type": "keybind",
+            "name": "Emote 1",
+            "default": []
+        },
+        "keybind-emote-1": {
+            "type": "keybind",
+            "name": "Emote 2",
+            "default": []
+        },
+        "keybind-emote-2": {
+            "type": "keybind",
+            "name": "Emote 3",
+            "default": []
+        },
+        "keybind-emote-3": {
+            "type": "keybind",
+            "name": "Emote 4",
+            "default": []
+        },
+        "keybind-emote-4": {
+            "type": "keybind",
+            "name": "Emote 5",
+            "default": []
+        },
+        "keybind-emote-5": {
+            "type": "keybind",
+            "name": "Emote 6",
+            "default": []
+        },
+        "keybind-emote-6": {
+            "type": "keybind",
+            "name": "Emote 7",
+            "default": []
+        },
+        "keybind-emote-7": {
+            "type": "keybind",
+            "name": "Emote 8",
+            "default": []
+        },
+        "keybind-force-switch": {
+            "type": "keybind",
+            "name": "Force Switch",
+            "default": []
+        }
+    },
+    "resources": {
+        "sprites": [
+            "resources/misc/*.png",
+            "resources/menu/*.png",
+            "resources/featured/*.png",
+            "resources/roles/*.png",
+            "resources/mod/*.png",
+            "resources/game/*.png"
+        ],
+        "spritesheets": {
+            "twemojis": [
+                "resources/emoji/*.png"
+            ],
+            "emotes": [
+                "resources/emotes_sprites/*.png"
+            ]
+        },
+        "fonts": {
+            "Consolas": {
+                "path": "resources/fonts/Consolas-Regular.ttf",
+                "size": 64
+            }
+        },
+        "files": [
+            "resources/emotes_sfx/*.ogg"
+        ]
+    },
+    "api": {
+        "include": [
+            "include/globed/*.hpp",
+            "include/globed/audio/*.hpp",
+            "include/globed/audio/sound/*.hpp",
+            "include/globed/core/*.hpp",
+            "include/globed/core/data/*.hpp",
+            "include/globed/core/game/*.hpp",
+            "include/globed/core/net/*.hpp",
+            "include/globed/soft-link/*.hpp",
+            "include/globed/util/*.hpp"
+        ]
+    }
+}

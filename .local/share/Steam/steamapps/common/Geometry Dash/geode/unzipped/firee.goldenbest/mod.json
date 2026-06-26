@@ -1,0 +1,49 @@
+{
+	"geode": "5.0.0-beta.1",
+	"gd": {
+		"win": "2.2081",
+		"mac": "2.2081",
+		"android": "2.2081",
+		"ios": "2.2081"
+	},
+	"version": "v1.1.3",
+	"id": "firee.goldenbest",
+	"name": "Golden Best",
+	"developer": "Firee",
+	"tags": ["gameplay", "enhancement", "utility", "offline"],
+	"description": "A mod that changes the percentage to gold when you are achieving a new best!",
+	"repository": "https://github.com/FireMario211/Golden-Best",
+	"settings": {
+		"practice-mode": {
+			"name": "Show in Practice Mode",
+			"description": "Whether or not to change the percentage while in practice mode",
+			"type": "bool",
+			"default": false
+		},
+		"platformer-mode": {
+			"name": "Show in Platformer Mode",
+			"description": "Whether or not to change the time to be gold while playing a platformer level.",
+			"type": "bool",
+			"default": false
+		},
+		"test-mode": {
+			"name": "Show in Startpos Mode",
+			"description": "Whether or not to change the percentage / time to be gold while playing the level with Startpos or in Test Mode.",
+			"type": "bool",
+			"default": false
+		},
+		"enable-colors": {
+			"name": "Enable Custom Colors",
+			"description": "Instead of changing to the gold font, the color of the label will change instead! (Requires restarting level upon setting change)",
+			"type": "bool",
+			"default": false
+		},
+		"custom-color": {
+			"name": "New Best Color",
+			"description": "What color to change the percentage / time when achieving a new best.",
+			"type": "color",
+			"default": "#FFDD44",
+			"enable-if": "enable-colors"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+# Level Thumbnails
+
+**Level Thumbnails** is a mod that adds thumbnails to levels in search.
+
+## Thumbnail Submission
+
+To submit thumbnails, go to **settings** and toggle "In-Game Thumbnail Taking."
+Then take a thumbnail using the **Level Thumbnails** button in the **pause menu**.
+
+# Credits
+
+- Logo & initial mod idea by [BriftXD [Twitter]](https://twitter.com/BriftXD)
+- Placeholder on the Thumbnail popup by [Cvolton](https://twitter.com/Misabr0penguin)
+- Thanks to [Alphalaneous](https://github.com/Alphalaneous) for fixing a lot of my bad code :3
+- [Matcool](https://github.com/matcool) for letting me steal a little bit of his [pinch to zoom](https://github.com/HJfod/BetterEdit/blob/v6/src/features/PinchToZoom.cpp) code
+- Submission rules displayed in game written by **LooferGD**

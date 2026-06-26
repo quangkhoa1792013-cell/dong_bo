@@ -1,0 +1,77 @@
+{
+    "geode": "5.5.3",
+    "gd": {
+        "win": "2.2081",
+        "android": "2.2081",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
+    "version": "v2.1.11",
+    "id": "alphalaneous.happy_textures",
+    "name": "Happy Textures x3c",
+    "developer": "Alphalaneous",
+    "description": "Texture Packs with more tools uwu mrrp :333",
+    "early-load": true,
+    "dependencies": {
+        "geode.node-ids": ">=v1.15.0",
+        "alphalaneous.alphas_geode_utils": ">=v1.2.3",
+        "prevter.imageplus": {
+            "required": true,
+            "version": ">=v1.0.0"
+        },
+        "geode.texture-loader": {
+            "required": true,
+            "version": ">=v1.9.0"
+        },
+        "raydeeux.pages_api": {
+            "required": false,
+            "version": ">=v1.4.15"
+        }
+    },
+    "resources": {
+        "files": [
+            "resources/*"
+        ],
+        "sprites": [
+            "sprites/*"
+        ]
+    },
+    "links": {
+        "homepage": "https://linktr.ee/Alphalaneous",
+        "source": "https://github.com/Alphalaneous/HappyTextures",
+        "community": "https://discord.gg/Txn2CA5dHF"
+    },
+    "tags": ["universal", "interface", "enhancement", "bugfix", "offline", "utility", "customization"],
+    "settings": {
+        "ccscale9sprite-fix": {
+            "name": "CCScale9Sprite Fix",
+            "description": "Fix sprite overlapping when you have transparent CCScale9Sprites (Such as on the level search page).",
+            "type": "bool",
+            "default": true
+        },
+        "pusab-fix": {
+            "name": "Pusab Fix",
+            "description": "Makes changing pusab in texture packs not affect the font within levels.",
+            "type": "bool",
+            "default": true
+        },
+        "comment-border-fix": {
+            "name": "Comment Border Fix",
+            "description": "Makes comment borders look cleaner, especially with texture packs.",
+            "type": "bool",
+            "default": true
+        },
+        "ui-modifications": {
+            "name": "Allow UI Modifications",
+            "description": "Allow Texture Packs to edit the game's interface.",
+            "type": "bool",
+            "default": true
+        },
+        "hot-reload": {
+            "name": "Hot Reload",
+            "description": "Allow hot reloading of UI elements, use if you are a texture pack creator.",
+            "type": "bool",
+            "default": false
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+	"geode": "5.6.0",
+	"version": "1.10.2",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "geode.texture-loader",
+	"name": "Texture Loader",
+	"developer": "Geode Team",
+	"description": "Texture Pack Manager",
+	"early-load": true,
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		]
+	},
+	"links": {
+		"source": "https://github.com/geode-sdk/textureldr"
+	},
+	"api": {
+		"include": [
+			"include/*.hpp"
+		]
+	},
+	"dependencies": {
+		"geode.node-ids": "1.20.1"
+	}
+}

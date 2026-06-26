@@ -1,0 +1,22 @@
+{
+    "Features": {
+        "enable_auto_refill": {
+            "main": {
+                "keys": "LEFT_SHIFT,BUTTON_1"
+            },
+            "value": false
+        }
+    },
+    "ModSettings": {
+        "first_run": false,
+        "enable_auto_refill": {
+            "main": {
+                "keys": "LEFT_SHIFT,BUTTON_1"
+            },
+            "value": false
+        }
+    },
+    "GuiSettings": {
+        "continuous_crafting_saved_value": false
+    }
+}

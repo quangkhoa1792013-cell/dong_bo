@@ -1,0 +1,4 @@
+minecraft:chest@bloat#Chest of NBT
+minecraft:netherite_sword{enchantments:{"minecraft:sharpness": 255, "minecraft:knockback": 255, "minecraft:fire_aspect": 255, "minecraft:looting": 10, "minecraft:sweeping_edge": 3, "minecraft:unbreaking": 255, "minecraft:mending": 1, "minecraft:vanishing_curse": 1}}#Bonk
+minecraft:splash_potion{potion_contents:{custom_effects:[{amplifier:125,duration:2000,id:"instant_health"}]}}#§rSplash Potion of §4§lINSTANT DEATH
+minecraft:splash_potion@all_effects#§rSplash Potion of Trolling

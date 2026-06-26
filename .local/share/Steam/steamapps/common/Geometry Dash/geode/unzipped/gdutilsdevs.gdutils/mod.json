@@ -1,0 +1,389 @@
+{
+    "geode": "5.6.1",
+    "version": "v1.6.0-beta.4",
+    "gd": {
+        "win": "2.2081",
+        "mac": "2.2081",
+        "android": "2.2081",
+        "ios": "2.2081"
+    },
+    "id": "gdutilsdevs.gdutils",
+    "name": "GDUtils",
+    "developers": ["Jouca", "Firee"],
+    "description": "Realtime Rate Notifications, leaderboard extension, epic UI redesign, auto-song mute, game fixes & more!",
+    "links": {
+        "community": "https://discord.gg/MU4Rpc6xbJ",
+        "source": "https://github.com/Jouca/GDUtils-Geode"
+    },
+    "dependencies": {
+        "geode.node-ids": ">=v1.21.1",
+        "jouca.badgesapi": ">=v1.4.1"
+    },
+    "api": {
+        "include": [ "include/*.hpp" ]
+    },
+    "tags": [
+        "online",
+        "enhancement",
+        "utility",
+        "interface",
+        "customization"
+    ],
+    "resources": {
+        "files": [
+            "resources/gauntlets/*.png",
+            "resources/gauntlets/particles.json"
+        ],
+        "sprites": [
+            "resources/*.png"
+        ],
+        "spritesheets": {
+            "countries": ["resources/countries/*.png"],
+            "badges": ["resources/badges/*.png"],
+            "scenes": ["resources/scenes/*.png"],
+            "extras": ["resources/extras/*.png"]
+        }
+    },
+    "settings": {
+        "notification-section": {
+            "name": "Notifications",
+            "description": "This category is for where it should <cy>show notifications</c>, and also <cy>what notifications</c> precisely.",
+            "type": "title"
+        },
+        "test-notification": {
+            "name": "Test",
+            "type": "custom:test-notification"
+        },
+        "past-notifications": {
+            "name": "Show Past Notifications",
+            "description": "If notifications that were supposed to be shown while you weren't playing Geometry Dash should be shown. A maximum of <cy>2 days</c> while you weren't playing Geometry Dash will be shown.",
+            "type": "bool",
+            "default": true
+        },
+        "everywhereElse": {
+            "name": "Everywhere Else",
+            "description": "If notifications should show on any screen.",
+            "type": "bool",
+            "default": true
+        },
+        "inEditor": {
+            "name": "In Editor",
+            "description": "If notifications should be shown in the editor.",
+            "type": "bool",
+            "default": true
+        },
+        "inLevels": {
+            "name": "In Levels",
+            "description": "If notifications should be shown when playing levels.",
+            "type": "bool",
+            "default": true
+        },
+        "inPlatformers": {
+            "name": "In Platformers",
+            "description": "If notifications should be shown when playing platformers levels.",
+            "type": "bool",
+            "default": true
+        },
+        "newRate": {
+            "name": "New Rates",
+            "description": "Whether or not to notify about new <cy>Rated Levels</c>",
+            "type": "bool",
+            "default": true
+        },
+        "newListRate": {
+            "name": "New List rates",
+            "description": "Whether or not to notify about new <cy>Rated List</c>.",
+            "type": "bool",
+            "default": true
+        },
+        "daily": {
+            "name": "Daily Levels",
+            "description": "Whether or not to notify about upcoming <cy>Daily Levels</c>",
+            "type": "bool",
+            "default": true
+        },
+        "weekly": {
+            "name": "Weekly Levels",
+            "description": "Whether or not to notify about upcoming <cr>Weekly Demons</c>",
+            "type": "bool",
+            "default": true
+        },
+        "event": {
+            "name": "Event Levels",
+            "description": "Whether or not to notify about upcoming <cp>Event Levels</c>",
+            "type": "bool",
+            "default": true
+        },
+        "smallChest": {
+            "name": "Small Chest Notification",
+            "description": "Whether or not to notify about upcoming <cy>Daily Small Chests</c>",
+            "type": "bool",
+            "default": true
+        },
+        "largeChest": {
+            "name": "Big Chest Notification",
+            "description": "Whether or not to notify about upcoming <cy>Daily Big Chests</c>",
+            "type": "bool",
+            "default": true
+        },
+        "announcement": {
+            "name": "Announcement Notifications",
+            "description": "Whether or not to notify about new <cy>Announcements from GDUtils</c>",
+            "type": "bool",
+            "default": true
+        },
+        "sfx": {
+            "name": "Notification SFX",
+            "description": "If notifications should play a sound when they are shown.",
+            "type": "bool",
+            "default": true
+        },
+        "sfx-link": {
+            "name": "Link Game SFX to Notification",
+            "description": "Link the game's SFX to the GDUtils notification SFX.",
+            "type": "bool",
+            "default": true
+        },
+        "sfx-volume": {
+            "name": "SFX Volume",
+            "description": "The volume of the notification sound effect.\n\n<cr>Can only be applied if 'Link Game SFX to Notification' is disabled.</c>",
+            "type": "float",
+            "default": 1,
+            "min": 0.0,
+            "max": 1,
+            "control": {
+                "slider-step": 0.0001,
+                "arrows": false
+            }
+        },
+        "customDifficultyFaces": {
+            "name": "Custom Difficulty Faces",
+            "description": "Enable custom difficulty faces for Legendary/Mythic",
+            "type": "bool",
+            "default": true
+        },
+        "notification-placement-section": {
+            "name": "Notification Placement",
+            "description": "This category is for where to <cy>show the notification</c> in the screen on a specific corner.",
+            "type": "title"
+        },
+        "notificationPlacement": {
+            "name": "Placement",
+            "descriptionold": "Where the notification should be placed.\n1 = <cy>Top Left</c> | 2 = <cy>Top Right</c>\n3 = <cy>Bottom Left</c> | 4 = <cy>Bottom Right</c>",
+            "type": "custom:notification-placement",
+            "default": 4
+        },
+        "notification-appearance-section": {
+            "name": "Notification Appearance",
+            "description": "This category is for <cy>setting notification boxes</c> for how it should appear.\nYou can also use <cb>decimals</c> in these options, such as <cy>0.5 size</c>, or <cy>3.5 seconds.</c>",
+            "type": "title"
+        },
+        "size": {
+            "name": "Size",
+            "description": "How big the notification should be.",
+            "type": "float",
+            "default": 1,
+            "min": 0.1,
+            "max": 2,
+            "control": {
+                "slider-step": 0.1,
+                "arrows": false
+            }
+        },
+        "time": {
+            "name": "Time Hold",
+            "description": "How long the notification should be.",
+            "type": "float",
+            "default": 3,
+            "min": 0.0,
+            "max": 15,
+            "control": {
+                "slider-step": 0.1
+            }
+        },
+        "spotify-section": {
+            "name": "Spotify",
+            "description": "This category is for determining when <cg>Spotify</c> should toggle <cr>mute</c>.\nThis only works if you currently have the <cg>Spotify App</c> open.\n\n<cy>If your music volume is set to 0, </c><cg>Spotify</c><cy>\nwill not be affected.</c>",
+            "type": "title",
+            "platforms": ["win","mac"]
+        },
+        "inEditorSpotify": {
+            "name": "In Editor",
+            "description": "Disabling this will not auto-mute Spotify when you are playing music in the Editor.",
+            "type": "bool",
+            "default": false,
+            "platforms": ["win","mac"]
+        },
+        "inLevelsSpotify": {
+            "name": "In Levels",
+            "description": "Disabling this will not auto-mute Spotify when you are playing a level, and music is playing.",
+            "type": "bool",
+            "default": false,
+            "platforms": ["win","mac"]
+        },
+        "spotifyApp": {
+            "name": "Application",
+            "description": "This will decide what application should be auto-muted.",
+            "type": "file",
+            "default": {
+                "win": "Spotify.exe",
+                "mac": "Spotify.app"
+            },
+            "platforms": ["win","mac"],
+            "control": {
+                "dialog": "open",
+                "filters": [
+                    {
+                        "files": ["*.exe", "*.app", "*.*"],
+                        "description": "Executable programs"
+                    }
+                ]
+            }
+        },
+        "design-section": {
+            "name": "Designs",
+            "description": "This category is for changing settings to activate/desactivate <cy>designs</c> of the mod.",
+            "type": "title"
+        },
+        "gauntletDesign": {
+            "name": "New gauntlets design",
+            "description": "Changes the design of the gauntlets in the main menu.",
+            "type": "bool",
+            "default": true
+        },
+        "secretLayerDesign": {
+            "name": "The Vault design",
+            "description": "Changes the design of The Vault.",
+            "type": "bool",
+            "default": true
+        },
+        "eventLevelInfo": {
+            "name": "Event Level Info",
+            "description": "Adds an info button to show the current event information!",
+            "type": "bool",
+            "default": true
+        },
+        "misc-section": {
+            "name": "Miscellaneous",
+            "description": "This category is for any other feature for <cy>GDUtils</c>.\nYou can choose whether to <cy>enable</c> or <cy>disable</c> some options if you do not want them.",
+            "type": "title"
+        },
+        "clickableBadges": {
+            "name": "Clickable Badges",
+            "description": "Makes badges in <cg>Profile</c>'s clickable, showing more information about them.",
+            "type": "bool",
+            "default": true
+        },
+        "customBadges": {
+            "name": "Custom Badges",
+            "description": "Whether or not to show custom badges in <cg>Profile</c> and <cg>Comments</c>.",
+            "type": "bool",
+            "default": true,
+            "enable-if": "clickableBadges"
+        },
+        "friendSearch": {
+            "name": "Search Friends",
+            "description": "Whether or not to show the search button in the <cg>Friends List Menu</c>.",
+            "type": "bool",
+            "default": true
+        },
+        "demonListPlacement": {
+            "name": "Demon Placements",
+            "description": "Whether or not to show placements for <cr>Extreme Demons</c> from <cy>Pointercrate</c>.",
+            "type": "bool",
+            "default": true
+        },
+        "demonListSelection": {
+            "name": "Demon List Selection",
+            "description": "Whether or not to select between <cg>Pointercrate</c> or <cg>AreDL</c> for placements.",
+            "type": "string",
+            "default": "Pointercrate",
+            "one-of": ["Pointercrate", "AreDL"]
+        },
+        "socketServer": {
+            "name": "Notifications Server",
+            "description": "Allows you to <cg>receive rate notifications.</c> (Recommended to keep enabled)\n\nRestart the game to apply changes.",
+            "type": "bool",
+            "default": true
+        },
+        "server-notification": {
+            "name": "Server Notification",
+            "description": "Whether or not to notify when you <cy>connect or reconnect</c> to the GDUtils notification servers.",
+            "type": "bool",
+            "default": false
+        },
+        "previewIcons": {
+            "name": "Preview Icons",
+            "description": "Show some buttons to preview icons in the <cg>Icon Kit</c> for those who haven't been unlocked yet.",
+            "type": "bool",
+            "default": true
+        },
+        "background-section": {
+            "name": "Backgrounds",
+            "description": "This category is for changing the <cy>background colors</c>.",
+            "type": "title"
+        },
+        "activate-background": {
+            "name": "Activate Background",
+            "description": "Enables custom background and child backgrounds colors for GD.",
+            "type": "bool",
+            "default": false
+        },
+        "background": {
+            "name": "Background",
+            "description": "Change the color of GD backgrounds.",
+            "type": "color",
+            "default": "#0066FF",
+            "enable-if": "activate-background"
+        },
+        "child-background": {
+            "name": "Child Background",
+            "description": "Change the color of GD child backgrounds (associated with GD backgrounds).",
+            "type": "color",
+            "default": "#00388D", 
+            "enable-if": "activate-background"
+        },
+        "syncBGcolor": {
+            "name": "Sync BG Color",
+            "description": "Allows you to <cg>synchronise the GD backgrounds</c> with child backgrounds.",
+            "type": "bool",
+            "default": true,
+            "enable-if": "activate-background"
+        },
+        "addChildBDGradient": {
+            "name": "Add child BG Gradient",
+            "description": "Adds a gradient to child backgrounds (only for level browsing).",
+            "type": "bool",
+            "default": true,
+            "enable-if": "activate-background"
+        },
+        "bgchild-transparency": {
+            "name": "BG Child Transparency",
+            "description": "Change the transparency of child backgrounds.",
+            "type": "bool",
+            "default": false,
+            "enable-if": "activate-background"
+        },
+        "bgchild-transparency-scroll": {
+            "name": "Transparency Opacity",
+            "description": "Change the opacity of the transparency of child backgrounds.\n\n<cy>0</c> - Totally <cy>transparent</c>\n<cy>255</c> - Totally <cy>opaque</c>\n\n<cy>Only works if Add child BG Gradient is enabled.</c>",
+            "type": "int",
+            "default": 0,
+            "min": 0,
+            "max": 255,
+            "control": {
+                "slider": true
+            },
+            "enable-if": "activate-background"
+        },
+        "credits-section": {
+            "name": "Credits",
+            "description": "Below are the credits for those that developed the mod, and beta-tested the mod!",
+            "type": "title"
+        },
+        "credit-buttons": {
+            "name": "Credit Buttons",
+            "type": "custom:credit-buttons"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:wind_charge": 22,
+      "minecraft:anvil": 2,
+      "minecraft:mace": 5,
+      "minecraft:firework_rocket": 6
+    },
+    "minecraft:killed": {
+      "minecraft:sheep": 4
+    },
+    "minecraft:picked_up": {
+      "minecraft:anvil": 1,
+      "minecraft:enchanted_book": 28,
+      "minecraft:cooked_mutton": 5,
+      "minecraft:brown_wool": 1,
+      "minecraft:mace": 1,
+      "minecraft:netherite_chestplate": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 170,
+      "minecraft:walk_one_cm": 3960,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 4,
+      "minecraft:damage_taken": 310,
+      "minecraft:damage_dealt": 305,
+      "minecraft:play_time": 9042,
+      "minecraft:jump": 35,
+      "minecraft:time_since_death": 149,
+      "minecraft:aviate_one_cm": 132391,
+      "minecraft:drop": 31,
+      "minecraft:sprint_one_cm": 10005,
+      "minecraft:fall_one_cm": 11666,
+      "minecraft:total_world_time": 16270,
+      "minecraft:fly_one_cm": 13850,
+      "minecraft:interact_with_anvil": 4,
+      "minecraft:deaths": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:mace": 1,
+      "minecraft:enchanted_book": 28,
+      "minecraft:anvil": 1,
+      "minecraft:netherite_chestplate": 1
+    }
+  },
+  "DataVersion": 4671
+}
